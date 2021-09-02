@@ -52,7 +52,7 @@ const displayResult = allData => {
             div.classList.add('col-md-4');
             div.innerHTML = `
             <div class="card p-2 m-3">
-                <img style="height: 15rem;" class="img-fluid" src="https://covers.openlibrary.org/b/id/${data.cover_i}-M.jpg">
+                <img style="height: 15rem;" class="img-fluid" src="https://covers.openlibrary.org/b/id/${data.cover_i ? data.cover_i : 8463228}-M.jpg">
                 <h3>${data.title}</h3>
                 <p class="p-0 m-0"><span class="fw-bold">Author:</span> ${data.author_name ? data.author_name : 'No name'}</p>
                 <p class="p-0 m-0"><span class="fw-bold">Publisher:</span> ${data.publisher ? data.publisher : 'No name'}</p>
