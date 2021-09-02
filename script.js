@@ -15,12 +15,13 @@ const searchBooks = () => {
     if (input.value === '') {
         document.getElementById('totalSearch').innerText = `Please Search Something`;
         document.getElementById('cardContainer').textContent = '';
+        // spin('none');
     } else {
         spin('block');
         document.getElementById('cardContainer').textContent = '';
         document.getElementById('totalSearch').innerText = '';
         input.value = '';
-        const url = `http://openlibrary.org/search.json?q=${inputText}`;
+        const url = `https://openlibrary.org/search.json?q=${inputText}`;
         fetch(url)
             .then(res => res.json())
             .then(data => displayResult(data.docs));
