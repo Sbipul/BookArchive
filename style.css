@@ -7,11 +7,9 @@
     width: 100%;
 }
 .spin {
-    position: absolute;
-    top: 54%;
-    left: 39%;
     display: none;
     height: 10rem;
     width: 16rem;
     filter: grayscale(1);
+    margin-top: -9.5rem;
 }
